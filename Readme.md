@@ -1,0 +1,111 @@
+
+# السؤال الاول : 
+
+![image](https://user-images.githubusercontent.com/58336325/183287585-7e38acff-4229-4763-8651-e3b26648e349.png)
+
+
+
+----------
+
+
+# السؤال الثاني : 
+
+![](https://paper-attachments.dropbox.com/s_ECF8A70774907FEBE2A4E12AF2C2ACA777E0864187F3C0A07609DB98595080B4_1646117992519_image.png)
+
+```
+public class TestMain {
+   public static void main(String[] args) {
+      // Test constructor and toString()
+      Account a1 = new Account("A101", "Tan Ah Teck", 88);
+      System.out.println(a1);  // toString();
+      Account a2 = new Account("A102", "Kumar"); // default balance
+      System.out.println(a2);
+
+      // Test Getters
+      System.out.println("ID: " + a1.getID());
+      System.out.println("Name: " + a1.getName());
+      System.out.println("Balance: " + a1.getBalance());
+
+      // Test credit() and debit()
+      a1.credit(100);
+      System.out.println(a1);
+      a1.debit(50);
+      System.out.println(a1);
+      a1.debit(500);  // debit() error
+      System.out.println(a1);
+
+      // Test transfer()
+      a1.transferTo(a2, 100);  // toString()
+      System.out.println(a1);
+      System.out.println(a2);
+   }
+}
+```
+
+The expected output is:
+
+```
+Account[id=A101,name=Tan Ah Teck,balance=88]
+Account[id=A102,name=Kumar,balance=0]
+ID: A101 
+Name: Tan Ah Teck
+Balance: 88 
+Account[id=A101,name=Tan Ah Teck,balance=188]
+Account[id=A101,name=Tan Ah Teck,balance=138]
+Amount exceeded balance
+Account[id=A101,name=Tan Ah Teck,balance=138]
+Account[id=A101,name=Tan Ah Teck,balance=38]
+Account[id=A102,name=Kumar,balance=100]
+```
+
+----------
+
+
+# السؤال الثالث - 1  :
+
+![image](https://user-images.githubusercontent.com/93971372/169216736-19f01f8b-b41b-4928-bb19-5dfa13a7580b.png)
+
+----------
+
+
+# السؤال الرابع : 
+
+![image](https://user-images.githubusercontent.com/58336325/183293984-8aa883e7-0f68-4e26-9d64-4cbdceb1228a.png)
+
+
+----------
+
+
+# السؤال الخامس :
+
+
+
+![](https://paper-attachments.dropbox.com/s_ECF8A70774907FEBE2A4E12AF2C2ACA777E0864187F3C0A07609DB98595080B4_1646123003232_image.png)
+
+
+----------
+
+
+# السؤال السادس :
+
+
+![image](https://user-images.githubusercontent.com/93971372/169215809-e3e5215d-67e7-4d30-b40b-bcb9c3e81795.png)
+
+
+
+----------
+
+
+
+# السؤال السابع :
+
+
+![image](https://user-images.githubusercontent.com/58336325/183287616-0c5bc654-aba8-415f-8473-b01f4241c8ec.png)
+
+
+
+
+----------
+
+
+
